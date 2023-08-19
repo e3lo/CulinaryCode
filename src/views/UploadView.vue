@@ -5,6 +5,7 @@
         <v-text-field v-model="title" label="Title"></v-text-field>
         <v-text-field v-model="duration" label="Duration" suffix="Hrs"></v-text-field>
         <v-textarea v-model="description" label="Description"></v-textarea>
+        <v-text-field v-model="link" label="Image link"></v-text-field>
         
         <h2>Recipe instructions</h2>
         <v-textarea
@@ -29,6 +30,7 @@ import { ref } from 'vue'
 const title = ref('')
 const duration = ref('')
 const description = ref('')
+const link = ref('')
 
 const steps = ref(["Do this", 'Then do this', 'Finally do that'])
 
@@ -48,7 +50,8 @@ function checkRecipe() {
       title : title.value,
       duration : duration.value,
       description : description.value,
-      steps : steps.value
+      link : link.value,
+      steps : steps.value,
     }
 
     saveRecipe(recipeObject)
