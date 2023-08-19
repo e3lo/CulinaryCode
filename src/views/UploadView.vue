@@ -14,12 +14,27 @@
         v-model="steps[index]"
         :label="'Step ' + (index + 1)"
         ></v-textarea>
+        <v-row>
+          <v-col cols="auto">
+            <v-btn @click="removeStep" variant="tonal">Remove Step</v-btn>
+          </v-col>
 
-        <v-btn @click="addStep">Add Step</v-btn>
-        <v-btn @click="removeStep">Remove Step</v-btn>
-
-        <h2> Final </h2>
-        <v-btn type="submit">submit</v-btn>
+          <v-col cols="auto">
+            <v-btn @click="addStep">Add Step</v-btn>
+          </v-col>
+        </v-row>
+        <v-row>
+          <v-col>
+            <v-alert 
+            type="success"
+            title="Successfully Uploaded"
+            text="You can now go to the home page and view your recipe submission"
+            v-if="submitSuccess"
+            ></v-alert>
+            <v-btn type="submit" block color="#E9FEDF">submit</v-btn>
+          </v-col>
+        </v-row>
+        
       </v-form>
     </div>
 </template>
@@ -31,8 +46,11 @@ const title = ref('')
 const duration = ref('')
 const description = ref('')
 const link = ref('')
-
 const steps = ref(["Do this", 'Then do this', 'Finally do that'])
+
+const submitSuccess = ref(false)
+
+console.log(submitSuccess)
 
 function addStep() {
   steps.value.push("")
@@ -44,6 +62,7 @@ function removeStep() {
 
 function checkRecipe() {
   let valid = true
+
   if (valid) {
     let recipeObject = {
       id : title.value, // Change this to remove conflicts
@@ -61,6 +80,7 @@ function checkRecipe() {
 function saveRecipe(object) {
   const jsonValue = JSON.stringify(object)
   localStorage.setItem(object.id, jsonValue)
+  submitSuccess.value = true
 }
 </script>
   

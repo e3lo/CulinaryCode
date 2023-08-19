@@ -39,7 +39,10 @@
     max-width: 800px;
     border-radius: 20px;
     box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.30);
-
+    margin-bottom: 3em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
 
 .card__header {
@@ -55,7 +58,7 @@
 }
 
 .card__btn{
-    margin-top: 2em;
+    margin-top: 1em;
     padding: 15px 90px 15px 90px;
     border-radius: 20px;
     background: #4B3232;
