@@ -17,7 +17,9 @@
 
     <div class="steps">
         <h2>Steps</h2>
-        <li v-for="item in recipe.steps">{{ item }}</li>
+        <ol class="steps__ol">
+            <li v-for="item in recipe.steps">{{ item }}</li>
+        </ol>
     </div>
     
     </div>
@@ -76,5 +78,9 @@
 .steps {
     max-width: 800px;
     margin: auto;
+}
+
+.steps__ol {
+    list-style: inside decimal;
 }
 </style>
