@@ -8,13 +8,14 @@
         <h1>Winter Recipes</h1>
         <p>Have a look at our amazing winter selection of heart warming recipes! Perfect for the cold winter nights and the toasty get togethers around the family dining</p>
       </div>
-      <v-card text="..."></v-card>
+      <RecipeCard title="Beef Wellington" :cookingHours="3" description="Ther eis a" imageSrc="https://cdn.vuetifyjs.com/images/cards/cooking.png" />
     </div>
   </div>
 </template>
 
 <script setup>
 import parallaxLink from '@/assets/static/winterRoad.jpg';
+import RecipeCard from '@/components/RecipeCard.vue'
 </script>
 
 <style scoped>
