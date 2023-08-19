@@ -7,7 +7,7 @@
         
         <v-img max-height="400" cover :src="link"></v-img>
         <v-card-text>{{ description }}</v-card-text>
-        <v-btn @click="seeRecipe">See Recipe</v-btn>
+        <RouterLink to="/recipe/hi">See recipe</RouterLink>
     </v-card>
 </template>
 
@@ -15,6 +15,7 @@
     import { reactive, computed } from 'vue'
 
     const props = defineProps({
+        id: String,
         title: String,
         cookingHours: Number,
         description : String,
@@ -26,7 +27,7 @@
     })
 
     function seeRecipe(){
-        console.log("Cliock")
+        console.log("Click")
     }
 </script>
 
