@@ -11,7 +11,7 @@ import { RouterLink, RouterView } from 'vue-router'
         <div class="navigation__buttons">
           <RouterLink to="/">Home</RouterLink>
           <RouterLink to="/trending">Trending</RouterLink>
-          <RouterLink to="/login">Upload</RouterLink>
+          <RouterLink to="/upload">Upload</RouterLink>
           <RouterLink to="/login">Login</RouterLink>
         </div>
       </nav>
