@@ -16,12 +16,21 @@ h1 {
   color: var(--vt-c-black-mute);
 }
 
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 28px;
+  color: var(--vt-c-black-mute);
+}
+
 /* setup */
 .setup{
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
 }
+
+
 
 a,
 .darkblue {

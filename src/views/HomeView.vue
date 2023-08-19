@@ -31,4 +31,5 @@ import RecipeCard from '@/components/RecipeCard.vue'
   transform: translateY(-150px);
   background-color: #F2F2ED;
 }
+
 </style>
