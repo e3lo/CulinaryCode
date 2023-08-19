@@ -38,11 +38,15 @@
     padding: 1em 2em 2em 2em;
     max-width: 800px;
     border-radius: 20px;
-    box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.30);
     margin-bottom: 3em;
     display: flex;
     flex-direction: column;
     gap: 1em;
+}
+
+.card:hover {
+    transition: 0.4s;
+    box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.30);
 }
 
 .card__header {

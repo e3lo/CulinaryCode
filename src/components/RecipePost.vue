@@ -83,4 +83,8 @@
 .steps__ol {
     list-style: inside decimal;
 }
+
+li {
+    margin-bottom: 2em;
+}
 </style>
