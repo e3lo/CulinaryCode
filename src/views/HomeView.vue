@@ -1,7 +1,13 @@
 
 
 <template>
-  <v-parallax height="400" :src="parallaxLink" />
+  <div class="hero">
+    <div class="hero__header">
+      <h1>Cooking, but simplified to code</h1>
+      <p>Enjoy bloatless recipes where you don't need to scroll to Tasmania to find the recipe</p>
+    </div>
+    <img class="hero__image" :src="heroImage">
+  </div>
   <div class="setup">
     <div class="body">
       <div class="heading">
@@ -14,7 +20,7 @@
 </template>
 
 <script setup>
-import parallaxLink from '@/assets/static/winterRoad.jpg';
+import heroImage from '@/assets/static/Saly-38.png';
 import RecipeCard from '@/components/RecipeCard.vue'
 
 
@@ -39,6 +45,24 @@ console.log(parsedData);
   padding-bottom: 2em;
   max-width: 600px;
   margin: auto;
+}
+
+.hero {
+  height: 600px;
+  background-color: #8E5858;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__header {
+  max-width: 400px;
+  color: #F2F2ED;
+  transform: translateY(-50px);
+}
+
+.hero__image {
+  max-width: 500px;
 }
 .body {
   padding: 2em;
