@@ -40,4 +40,18 @@ import { RouterLink, RouterView } from 'vue-router'
     color: #693232;
   }
 
+  a,
+  .darkblue {
+  text-decoration: none;
+  color: #0E0E0F;
+  transition: 0.4s;
+  padding: 2px;
+  font-weight: 700;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(40, 40%, 25%, 0.2);
+  }
+}
 </style>
