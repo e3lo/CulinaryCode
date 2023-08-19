@@ -3,7 +3,7 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-  <header>
+  <header class="setup">
       <nav class="navigation">
         <div class="navigation__logo">
           <RouterLink to="/"><span class="playfair logo">Culinary</span><span class="logo">Code</span></RouterLink>
@@ -13,14 +13,12 @@ import { RouterLink, RouterView } from 'vue-router'
           <RouterLink to="/trending">Trending</RouterLink>
           <RouterLink to="/login">Login</RouterLink>
         </div>
-
       </nav>
   </header>
-
   <RouterView />
 </template>
 
-<style scoped>
+<style scoped>  
   .navigation {
     display: flex;
     align-items: center;

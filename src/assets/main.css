@@ -1,16 +1,26 @@
 @import './base.css';
 
 #app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-
   font-weight: normal;
 }
 
 /* Text Styling */
 .playfair {
   font-family: 'Playfair Display', serif;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 36px;
+  color: var(--vt-c-black-mute);
+}
+
+/* setup */
+.setup{
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
 a,
