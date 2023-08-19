@@ -7,7 +7,7 @@
         
         <v-img max-height="400" cover :src="link"></v-img>
         <v-card-text>{{ description }}</v-card-text>
-        <RouterLink to="/recipe/hi">See recipe</RouterLink>
+        <RouterLink :to="route">See recipe</RouterLink>
     </v-card>
 </template>
 
@@ -17,18 +17,16 @@
     const props = defineProps({
         id: String,
         title: String,
-        cookingHours: Number,
+        cookingHours: String,
         description : String,
         imageSrc : String,
     })
 
-    const link = computed(() => {
-        return ("https://cdn.vuetifyjs.com/images/cards/cooking.png")
-    })
+    const route = `/recipe/${props.id}`
 
-    function seeRecipe(){
-        console.log("Click")
-    }
+    const link = computed(() => {
+        return (props.imageSrc)
+    })
 </script>
 
 <style scoped>
