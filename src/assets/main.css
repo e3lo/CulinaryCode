@@ -8,15 +8,22 @@
   font-weight: normal;
 }
 
+/* Text Styling */
+.playfair {
+  font-family: 'Playfair Display', serif;
+}
+
 a,
-.blue {
+.darkblue {
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
+  color: #0E0E0F;
   transition: 0.4s;
+  padding: 2px;
+  font-weight: 700;
 }
 
 @media (hover: hover) {
   a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
+    background-color: hsla(40, 40%, 25%, 0.2);
   }
 }
