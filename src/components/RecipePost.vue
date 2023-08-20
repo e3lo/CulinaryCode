@@ -17,6 +17,7 @@
 
     <div class="steps">
         <h2>Steps</h2>
+        <StepsComponent v-for="item in recipe.steps" items/>
         <ol class="steps__ol">
             <li v-for="item in recipe.steps">{{ item }}</li>
         </ol>
@@ -27,6 +28,7 @@
 
 <script setup>
     import { computed, ref } from 'vue'
+    import StepsComponent from './StepsComponent.vue';
 
     const props = defineProps({
         id : String,
