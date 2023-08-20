@@ -1,7 +1,7 @@
 <template>
     <v-img :src="arrowLink" height="50"></v-img>
     <div class="step-card instruction-card" v-if="instructionType">
-        <h3>✅Instruction</h3>
+        <h3>📜Instruction</h3>
         <p>{{ item['instruction'] }}</p>
     </div>
 
