@@ -4,7 +4,7 @@
   <div class="setup">
     <div class="body">
       <div class="heading">
-        <h1>Whats hot right now</h1>
+        <h1>🔥Whats hot right now</h1>
         <p>See what everyone else is cooking up at the moment! These are some of the most popular and trendy dishes to bring out to the dining table</p>
       </div>
       <RecipeCard v-for="(value, key) in parsedData" :id="value.id" :title="value.title" :cookingHours="value.duration" :description="value.description" :imageSrc="value.link" />

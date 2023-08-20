@@ -18,7 +18,10 @@ function saveRecipe(object) {
           <RouterLink to="/">Home</RouterLink>
           <RouterLink to="/trending">Trending</RouterLink>
           <RouterLink to="/upload">Upload</RouterLink>
-          <RouterLink to="/login">Login</RouterLink>
+          <!--
+            Removed as not finished
+            <RouterLink to="/login">Login</RouterLink>
+          -->
         </div>
       </nav>
   </header>
@@ -75,7 +78,7 @@ function saveRecipe(object) {
   background-color: #8E5858;
   margin: auto;
   text-align: center;
-  padding-top: 3dem;  
+  padding-top: 3em;  
   padding-bottom: 2em;
 }
 </style>

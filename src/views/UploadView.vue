@@ -1,6 +1,10 @@
 <template>
+    <div class="hero">
+    </div>
     <div class="setup card">
       <v-form @submit.prevent="checkRecipe">
+
+        <h2>Recipe details</h2>
 
         <v-text-field v-model="title" label="Title"></v-text-field>
         <v-text-field v-model="duration" label="Duration" suffix="Hrs"></v-text-field>
@@ -112,9 +116,18 @@ function saveRecipe(object) {
 </script>
   
 <style>
+
+.hero {
+  height: 150px;
+  background-color: #8E5858;
+}
+
 .card {
   margin: auto;
   max-width: 800px;
+  padding-top: 3em;
+  transform: translateY(-50px);
+  background-color: #F2F2ED;
 }
 
 .steps__row {
