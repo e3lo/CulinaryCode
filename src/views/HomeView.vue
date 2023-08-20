@@ -1,5 +1,3 @@
-
-
 <template>
   <div class="hero">
     <div class="hero__header">
@@ -13,6 +11,15 @@
       <div class="heading">
         <h1>Winter Recipes</h1>
         <p>Have a look at our amazing winter selection of heart warming recipes! Perfect for the cold winter nights and the toasty get togethers around the family dining</p>
+        <div class="heading__selector"> 
+          <v-chip color="success">Asian</v-chip>
+          <v-chip color="success">European</v-chip>
+          <v-chip>American</v-chip>
+          <v-chip>Healthy</v-chip>
+          <v-chip>Fast</v-chip>
+          <v-chip>Fancy</v-chip>
+          <v-chip>Beginner Friendly</v-chip>
+        </div>
       </div>
       <RecipeCard v-for="(value, key) in parsedData" :id="value.id" :title="value.title" :cookingHours="value.duration" :description="value.description" :imageSrc="value.link" />
     </div>
@@ -22,7 +29,6 @@
 <script setup>
 import heroImage from '@/assets/static/Saly-38.png';
 import RecipeCard from '@/components/RecipeCard.vue'
-
 
 const keys = Object.keys(localStorage);
 
@@ -45,6 +51,15 @@ console.log(parsedData);
   padding-bottom: 2em;
   max-width: 600px;
   margin: auto;
+}
+
+.heading__selector {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .hero {
