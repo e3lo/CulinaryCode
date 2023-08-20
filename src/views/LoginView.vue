@@ -1,16 +1,10 @@
 <template>
-    <div class="about">
-      <h1>This is a login screen</h1>
-    </div>
+  <v-form>
+    <v-text-field v-model="title" label="Title"></v-text-field>
+  </v-form>
   </template>
   
   <style>
-  @media (min-width: 1024px) {
-    .about {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-    }
-  }
+
   </style>
   

@@ -12,7 +12,7 @@ function saveRecipe(object) {
   <header class="setup">
       <nav class="navigation">
         <div class="navigation__logo">
-          <RouterLink to="/"><span class="playfair logo">Culinary</span><span class="logo">Code</span></RouterLink>
+          <RouterLink to="/"><span class="playfair logo"><i>Culinary</i></span><span class="logo">Code</span></RouterLink>
         </div>
         <div class="navigation__buttons">
           <RouterLink to="/">Home</RouterLink>
@@ -23,6 +23,11 @@ function saveRecipe(object) {
       </nav>
   </header>
   <RouterView />
+  <div class="footer">
+    <span class="playfair logo light"><i>Culinary</i></span><span class="logo light">Code</span>
+    <p class="light">© 2023 — CulinaryCode, LLC</p>
+    
+  </div>
 </template>
 
 <style scoped>  
@@ -46,6 +51,10 @@ function saveRecipe(object) {
     color: #693232;
   }
 
+  .light {
+    color: white;
+  }
+
   a,
   .darkblue {
   text-decoration: none;
@@ -59,5 +68,14 @@ function saveRecipe(object) {
   a:hover {
     background-color: hsla(40, 40%, 25%, 0.2);
   }
+}
+
+.footer {
+  width: 100%;
+  background-color: #8E5858;
+  margin: auto;
+  text-align: center;
+  padding-top: 3dem;  
+  padding-bottom: 2em;
 }
 </style>
