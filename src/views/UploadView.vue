@@ -9,6 +9,8 @@
         
         <h2>Recipe instructions</h2>
 
+        <v-textarea v-model="preInstruction" label="Instruction description"></v-textarea>
+
         <div class="steps">
           <div class="steps__row" v-for="(step, index) in steps">
             <v-textarea
@@ -52,6 +54,7 @@ const title = ref('')
 const duration = ref('')
 const description = ref('')
 const link = ref('')
+const preInstruction = ref('')
 const steps = ref([
   {
     instruction : "Do this",
@@ -92,6 +95,7 @@ function checkRecipe() {
       duration : duration.value,
       description : description.value,
       link : link.value,
+      preInstruction : preInstruction.value,
       steps : steps.value,
     }
 

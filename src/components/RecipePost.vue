@@ -16,7 +16,12 @@
     </div>
 
     <div class="steps">
-        <h2>Steps</h2>
+        <div class="steps__heading">
+            <h1>Steps</h1>
+
+            {{ recipe.preInstruction }}
+        </div>
+
         <StepsComponent v-for="items in recipe.steps" :item="items"/>
     </div>
     
@@ -77,6 +82,10 @@
 .steps {
     max-width: 800px;
     margin: auto;
+}
+
+.steps__heading {
+    text-align: center;
 }
 
 .steps__ol {

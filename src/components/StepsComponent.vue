@@ -46,6 +46,11 @@ switch(props.item['type']) {
     margin-top: 2em;
 }
 
+.step-card:hover {
+    transition: 0.4s;
+    box-shadow: 0px 4px 35px 0px rgba(0, 0, 0, 0.15);
+}
+
 .ingredient-card {
     background: rgba(255, 255, 255, 0.50);
     margin-left: auto;
