@@ -16,7 +16,7 @@
               v-model="steps[index].instruction"
               :label="'Step ' + (index + 1)"
             ></v-textarea>
-            <v-combobox label="Media Type" :items="['Instructions', 'Ingredients', 'Image']" v-model="steps[index].type"></v-combobox>
+            <v-combobox label="Media Type" :items="['Instructions', 'Ingredients']" v-model="steps[index].type"></v-combobox>
           </div>
         </div>
 

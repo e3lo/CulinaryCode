@@ -17,10 +17,7 @@
 
     <div class="steps">
         <h2>Steps</h2>
-        <StepsComponent v-for="item in recipe.steps" items/>
-        <ol class="steps__ol">
-            <li v-for="item in recipe.steps">{{ item }}</li>
-        </ol>
+        <StepsComponent v-for="items in recipe.steps" :item="items"/>
     </div>
     
     </div>
